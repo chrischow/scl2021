@@ -86,16 +86,18 @@ Overall, we trained 13 POI models and 13 street name models. The submissions (Su
 | 28     | POI-9F | STREET-D  | 0.64500 | Only POI-9 "optimised" |  |
 | 29     | POI-11 | STREET-G  |  | ET-4 for both |  |
  
+## Result
+We finished in **27th place out of over 1,000 teams (top 3%)**. Our private leaderboard score was an accuracy of 65.4%.
 
-### Reflections
+## Reflections
 Overall, the competition gave me valuable exposure to NER. The tight competition timeline forced me to learn quickly - both the basics of NER and how to implement these in code in spaCy. It was also a great opportunity to practice my skills in building neural networks, less network architecture search (since spaCy didn't allow it).
 
 That said, there were some areas for improvement:
 
-#### Proper Validation
+### Proper Validation
 Given the long training time, we skipped cross validation entirely. But, we noticed that some teams (who posted their solutions) actually did! Perhaps, we could have improved model performance by using cross validation, possibly on a smaller subset of the data. We also did not keep a holdout set to test our models on. This could have been useful to provide us with a more accurate picture of how our model would perform on the leaderboard.
 
-#### Pipelines
+### Pipelines
 My "pipeline" to preprocess data and train models was extremely manual. I kept different notebooks for different versions of the preprocessing steps and models. This meant that I had to duplicate and amend two notebooks just to preprocess the data and train a new model. Multiply this by two (POI and street name), and that's **four** manual steps. This process could have been improved by using better tools for managing dependent tasks, like Airflow (which I have since picked up).
 
 At the time, I wasn't familiar with [spaCy 3.0](https://spacy.io/). However, Zach was discovered that it was pretty efficient because it used config files and simple CLI commands to control training. Check out his [article on Towards Data Science](https://towardsdatascience.com/using-spacy-3-0-to-build-a-custom-ner-model-c9256bea098). I could have explored this option a little more to improve efficiency in hyperparameter tuning.
