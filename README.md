@@ -1,4 +1,6 @@
-![](https://github.com/chrischow/scl2021/blob/main/scl2021-badge.png?raw=true)
+<p align="center">
+    <img src="https://github.com/chrischow/scl2021/blob/main/scl2021-badge.png?raw=true" height="250">
+</p>
 
 # Shopee Code League 2021
 Shopee Code League 2021 was a 3-week coding challenge open to students and professionals across the Southeast Asia region. It comprised three coding challenges: 
