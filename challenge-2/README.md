@@ -101,3 +101,6 @@ Given the long training time, we skipped cross validation entirely. But, we noti
 My "pipeline" to preprocess data and train models was extremely manual. I kept different notebooks for different versions of the preprocessing steps and models. This meant that I had to duplicate and amend two notebooks just to preprocess the data and train a new model. Multiply this by two (POI and street name), and that's **four** manual steps. This process could have been improved by using better tools for managing dependent tasks, like Airflow (which I have since picked up).
 
 At the time, I wasn't familiar with [spaCy 3.0](https://spacy.io/). However, Zach was discovered that it was pretty efficient because it used config files and simple CLI commands to control training. Check out his [article on Towards Data Science](https://towardsdatascience.com/using-spacy-3-0-to-build-a-custom-ner-model-c9256bea098). I could have explored this option a little more to improve efficiency in hyperparameter tuning.
+
+### Managing Experiments
+We logged our experiments manually using the table above. We could have improved this process by using a ML lifecycle management tool like [MLflow](https://mlflow.org/). I have shortlisted this as a tool to learn in the coming months.
