@@ -16,3 +16,7 @@ Check out our solutions and results here:
 1. Challenge 1: Multi-channel Contacts [[Solution](https://github.com/chrischow/scl2021/tree/main/challenge-1)] [[Results](https://www.kaggle.com/c/scl-2021-da/leaderboard)]
 2. Challenge 2: Address Elements Extraction [[Solution](https://github.com/chrischow/scl2021/tree/main/challenge-2)] [[Results](https://www.kaggle.com/c/scl-2021-ds/leaderboard)]
 3. Challenge 3: Programming Contest [[Problem Statement and Reflections](https://github.com/chrischow/scl2021/tree/main/challenge-3)]
+
+<p align="center">
+    <img src="https://github.com/chrischow/scl2021/blob/main/top-30-teams-notification.png?raw=true" height="700">
+</p>
