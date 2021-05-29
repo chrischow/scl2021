@@ -1,4 +1,4 @@
-# Competition 1: Multi-Channel Contacts
+# Challenge 1: Multi-Channel Contacts
 See the competition on [Kaggle](https://www.kaggle.com/c/scl-2021-da/leaderboard).
 
 ## Background Information
@@ -20,6 +20,15 @@ For the purpose of this question, assume that all contacts from the same Phone N
 - All Phone Numbers are stored without the country code and the country code can be ignored.
 - Contacts represent the number of times a user reached out to us in that particular ticket (Email, Call, Livechat etc.)
 - If a value is NA means that the system or agent has no record of that value.
+
+### Examples
+
+| Ticket | ID  | Email | Phone | Order ID | Contacts |
+| :----- | :-: | :---- | :---- | :------- | :------- |
+| A      | 0   | tom@gmail.com | NA | 1234 | 5 |
+| B      | 1   | NA | 682212345 | 1234 | 2 |
+| C      | 2   | jerry@gmail.com | 682212345 | NA | 4 |
+| D      | 3   | jerry@gmail.com | NA | NA | 3 |
 
 Each of these tickets are related either directly or indirectly through Email, Phone or Order ID, therefore each ticket belongs to the same user.
 
